@@ -15,8 +15,8 @@ jobs:
       - uses: ./
         id: is_organization_member
         with:
-          organization: americanexpress
-          username: JamesSingleton
+          organization: OperationsYU
+          username: fish0607
           token: ${{ secrets.GITHUB_TOKEN }}
       - name: Log Result
         run: |
