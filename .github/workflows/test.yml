@@ -17,7 +17,8 @@ jobs:
         with:
           organization: OperationsYU
           username: fish0607
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.ACCESS_TOKEN }}
+
       - name: Log Result
         run: |
           result=${{steps.is_organization_member.outputs.result}}
