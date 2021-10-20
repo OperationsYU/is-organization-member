@@ -27,6 +27,11 @@ async function run() {
   );
 
   const isMember = orgs.some(({ login }) => login === organization);
+  console.log("=======");
+  console.log(organization);
+  console.log(username);
+  console.log(isMember);
+  console.log("=======");
 
   core.setOutput('result', isMember ? 'true' : 'false');
 }
